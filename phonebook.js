@@ -23,9 +23,6 @@ console.log('Введите номер телефона');
 const phone = Number(await getLine());
 phoneBook[name] = phone;
 }
-async function print (){
-    console.log(phoneBook);
-}
 async function deletePhone(){
 console.log('Введите номер для удаления');
 const phone = Number(await getLine());
