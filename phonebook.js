@@ -25,7 +25,9 @@ async function add() {
 }
 
 async function print() {
-  console.log(phoneBook);
+  for (let key in phoneBook) {
+   console.log(`Контакт с именем ${key} и номером ${phoneBook[key]}`);
+  }
 }
 
 async function deletePhone() {
